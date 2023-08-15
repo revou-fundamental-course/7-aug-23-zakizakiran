@@ -15,7 +15,7 @@ Aplikasi ini dibangun menggunakan:
 * CSS3
 * JavaScript
 
-# Akses Website
+# Akses
 
 Aplikasi ini dapat diakses dengan klik [link ini](https://revou-fundamental-course.github.io/7-aug-23-zakizakiran/)
 
