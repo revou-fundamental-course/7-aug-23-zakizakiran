@@ -17,6 +17,6 @@ Aplikasi ini dibangun menggunakan:
 
 # Akses Website
 
-Aplikasi ini dapat diakses melalui link https://zakizakiran.github.io/
+Aplikasi ini dapat diakses dengan klik [link ini](https://revou-fundamental-course.github.io/7-aug-23-zakizakiran/)
 
 Created by zakizakiran 🔥
