@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Recursive:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <title>KaSet</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav-title">KaSet</div>
+      </nav>
+    </header>
+    <main>
+      <section class="introduction-section">
+        <div class="introduction-container d-flex gap-1">
+          <div class="introduction-text">
+            <h1 class="introduction-title mb-1">Selamat datang! 👋🏻</h1>
+            <p>
+              Selamat datang di KaSet - Kalkulator Online Segitiga! Apakah Anda
+              memerlukan alat yang cepat, akurat, dan user-friendly untuk
+              menghitung luas dan keliling segitiga? Jangan khawatir, KaSet
+              hadir untuk memenuhi kebutuhan Anda. KaSet adalah sebuah website
+              inovatif yang dibuat untuk membantu Anda dengan perhitungan
+              segitiga tanpa repot mengeluarkan rumus atau mencari kalkulator
+              fisik.
+            </p>
+          </div>
+          <img class="hero-img" src="assets/formula.svg" width="50%" alt="" />
+        </div>
+      </section>
+      <section class="calculator-section d-grid">
+        <div class="card m-1 p-2 card-luas">
+          <div class="head-container d-flex justify-between mb-1">
+            <h1 class="mb-1">Hitung Luas Segitiga</h1>
+            <button class="button-gambar" id="imgLuas">Lihat rumus</button>
+            <div id="modalLuas" class="modal">
+              <span class="closeLuas">&times;</span>
+              <img
+                class="modal-content"
+                src="/assets/luas.png"
+                alt="Luas Segitiga"
+              />
+            </div>
+          </div>
+          <div>
+            <input
+              id="alas"
+              name="alasInput"
+              type="number"
+              placeholder="Alas Segitiga"
+              class="input-formLuas mb-1"
+            />
+            <input
+              id="tinggi"
+              name="tinggiInput"
+              type="number"
+              placeholder="Tinggi Segitiga"
+              class="input-formLuas mb-1"
+            />
+            <button
+              class="action-button mr-1"
+              type="button"
+              onclick="hitungLuas()"
+            >
+              Hitung
+            </button>
+
+            <button
+              class="reset-action-button mb-1"
+              id="btnReset"
+              onclick="resetButtonLuas()"
+            >
+              Reset
+            </button>
+          </div>
+          <div class="card-displayHasil" id="displayHasilLuas">
+            <p>L = 1/2 &times; a &times; t</p>
+            <p class="mb-1">
+              L = 1/2 &times; <span id="alasValue"></span> &times;
+              <span id="tinggiValue"></span>
+            </p>
+            <p style="font-weight: bold">L = <span id="luasHasil"></span></p>
+          </div>
+        </div>
+        <div class="card m-1 p-2 card-keliling">
+          <div class="head-container d-flex justify-between mb-1">
+            <h1 class="mb-1">Hitung Keliling Segitiga</h1>
+            <button class="button-gambar" id="imgKeliling">Lihat rumus</button>
+            <div id="modalKeliling" class="modal">
+              <span class="closeKeliling">&times;</span>
+              <img
+                class="modal-content"
+                src="/assets/keliling.png"
+                alt="Luas Segitiga"
+              />
+            </div>
+          </div>
+          <div>
+            <input
+              type="number"
+              id="sisi1"
+              placeholder="Sisi Pertama Segitiga"
+              class="input-formKeliling mb-1"
+            />
+            <input
+              type="number"
+              id="sisi2"
+              placeholder="Sisi Kedua Segitiga"
+              class="input-formKeliling mb-1"
+            />
+            <input
+              type="number"
+              id="sisi3"
+              placeholder="Sisi Ketiga Segitiga"
+              class="input-formKeliling mb-1"
+            />
+            <button
+              class="action-button mr-1"
+              type="button"
+              onclick="hitungKeliling()"
+            >
+              Hitung
+            </button>
+            <button
+              class="reset-action-button mb-1"
+              onclick="resetButtonKeliling()"
+            >
+              Reset
+            </button>
+          </div>
+
+          <div class="card-displayHasil" id="displayHasilKeliling">
+            <p>K = s1 &plus; s2 &plus; s3</p>
+            <p class="mb-1">
+              K = <span id="sisi1Value"></span> &plus;
+              <span id="sisi2Value"></span> &plus; <span id="sisi3Value"></span>
+            </p>
+            <p style="font-weight: bold">
+              K = <span id="kelilingHasil"></span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="footer-text">Made with love by Zaki &copy 2023</p>
+    </footer>
+    <script src="../js/script.js" type="text/javascript"></script>
+  </body>
+</html>

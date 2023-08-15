@@ -1,0 +1,291 @@
+*{
+    font-family: 'Quicksand';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-pink: #F31559;
+    --secondary-pink: #FF52A2;
+    --primary-blue: #252B48;
+}
+
+::placeholder{
+    font-size: 14px;
+}
+
+input{
+    width: 100%;
+    border-radius: 10px;
+    border-color: black;
+    padding: 5px;
+    margin-right: 2rem;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+footer{
+    background-color: var(--primary-pink);
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.footer-text{
+    color: white;
+    font-weight: 600;
+    padding: 2rem;
+}
+
+.button-gambar{
+    cursor: pointer;
+    padding: 0.5rem;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--primary-pink);
+}
+
+.button-gambar:hover{
+    background-color: black;
+    transition: all 200ms;
+}
+
+.nav{
+    background-color: var(--primary-pink);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: white;
+    text-align: center;
+}
+
+.nav-title{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.introduction-section{
+    margin-top: 2.5rem;
+}
+
+.introduction-container{
+    margin: 2rem;
+}
+
+.calculator-section{
+   margin: 0 1rem 0 1rem;
+}
+
+.action-button{
+    cursor: pointer;
+    padding: 1rem;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--primary-blue);
+}
+
+.action-button:hover{
+    background-color: black;
+    transition: all ease-in-out 200ms;
+}
+
+.action-button:active{
+    transform: scale(1.2);
+}
+
+.reset-action-button{
+    cursor: pointer;
+    padding: 1rem;
+    font-weight: 600;
+    color: var(--primary-blue);
+    background-color: white;
+    border: solid 1px var(--primary-blue);
+    border-radius: 10px;
+}
+
+.reset-action-button:hover{
+    background-color: black;
+    color: white;
+    transition: all ease-in-out 200ms;
+}
+
+.reset-action-button:active{
+    transform: scale(1.2);
+}
+
+.card-displayHasil{
+    display: none;
+    border: solid 1px lightgray;
+    border-radius: 10px;
+    padding: 1rem;
+}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  .modal-content{
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .closeLuas {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .closeLuas:hover,
+  .closeLuas:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .closeKeliling {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .closeKeliling:hover,
+  .closeKeliling:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+/* Custom CSS */
+
+.card{
+    border: solid 1px lightgray;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 10px 10px black;
+}
+
+.d-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.items-between{
+    justify-items: stretch;;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.m-auto{
+    margin: auto;
+}
+
+.m-1{
+    margin: 1rem;
+}
+
+.mr-1{
+    margin-right: 1rem;
+}
+
+.p-2{
+    padding: 2rem;
+}
+
+.mb-1{
+    margin-bottom: 1rem;
+}
+
+.gap-1{
+    gap: 5rem;
+}
+/* End of custom CSS */
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .introduction-section{
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-img{
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .head-container{
+        display: block;
+    }
+
+    .modal-content{
+        width: 90%;
+    }
+
+    .introduction-container{
+        display: block;
+    }
+
+    .img-rumus{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .calculator-section{
+        margin: 2rem 1rem 2rem 1rem;
+        display: block;
+    }
+
+    .card-luas{
+        margin-bottom: 2.5rem;
+    }
+
+    .footer-text{
+        text-align: center;
+    }
+}
