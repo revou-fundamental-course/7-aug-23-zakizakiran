@@ -6,7 +6,7 @@ Kalkulator Segitiga Sederhana ini dikembangkan sebagai bagian dari Tugas Mini Pr
 
 * Menghitung luas dan keliling segitiga dengan mudah
 * Menyediakan serta rumus luas dan keliling segitiga
-* Antarmuka ramah pengguna dan menarik
+* Antarmuka ramah pengguna, menarik, dan responsive
 
 # Teknologi
 
